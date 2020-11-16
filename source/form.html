@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Форма отзыва</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <!--<link rel="stylesheet" href="css/style.min.css"> .min-->
@@ -12,9 +12,9 @@
       <div class="main-nav__container modal">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item button"><a href="#">Главная</a></li>
+            <li class="main-nav__item button"><a href="index.html">Главная</a></li>
             <li class="main-nav__item button"><a href="catalog.html">Фото и видео</a></li>
-            <li class="main-nav__item button"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item button"><a href="#">Форма отзыва</a></li>
             <li class="main-nav__item button"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
@@ -25,83 +25,95 @@
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
         <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
       </button>
-      <a class="page-header__logo" href="#" aria-label="ссылка на главную страницу">
+      <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
         <img src="" width="102" height="84" alt="Логотип города Седона">
       </a>
       <div class="page-header__img-container">
-        <img src="" width="901" height="389" alt="Природа города Седона">
+        <img src="" width="902" height="214" alt="Природа города Седона">
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Город Седона</h1>
-      <section class="receptions">
-        <h2 class="visually-hidden">Приемушества города Седона</h2>
+    <main class="page-main form-main">
+      <h1 class="visually-hidden">Форма отзыва</h1>
+      <section class="feedback">
         <div class="text-container">
-          <b class="bold-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <b class="bold-text">Оставте свой отзыв</b>
+          <p class="text">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них,
+            а также о посещенных вами достопримечательностях
+          </p>
         </div>
-        <ul class="receptions-list">
-          <li class="receptions-item">
-            <h3>Настоящий городок</h3>
-            <span>— №1 —</span>
-            <p>Седона не аттракцион для туристов, там течёт своя жизнь</p>
-            <div class="receptions-item__img-container">
-              <img src="" width="520" height="260" alt="Кадр с улиц Седоны">
-            </div>
-            <div>
-              <ul class="receptions-item__list">
-                <li>
-                  <h4>Жильё</h4>
-                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li>
-                  <h4>Сувениры</h4>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>
-                <li>
-                  <h4>Еда</h4>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="receptions-item">
-            <h3>Там есть мост дьявола</h3>
-            <span>— №2 —</span>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <div class="receptions-item__img-container">
-              <img src="" width="520" height="260" alt="Мост дьявола">
-            </div>
-          </li>
-          <li class="receptions-item receptions-item--short">
-            <h3>Небольшая площадь</h3>
-            <span>— №3 —</span>
-            <p>Все интересные места находятся очень близко</p>
-          </li>
-          <li class="receptions-item receptions-item--short">
-            <h3>Красивая дорога</h3>
-            <span>— №4 —</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="receptions-item receptions-item--short">
-            <h3>Мало туристов</h3>
-            <span>— №5 —</span>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="check-in">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button check-in-button" href="#">Найти гостиницу</a>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <a class="map-link" href="https://goo.gl/maps/uQ7ARYF98ZbJYkZb7">
-          <img src="" width="320" height="350" alt="Карта">
-        </a>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="feedback-item feedback-name">
+            <legend>Представтесь:</legend>
+            <label>
+              Имя*:
+              <input class="name-input" type="text" name="name" placeholder="Пётр" required>
+            </label>
+            <label>
+            Фамилия*:
+            <input class="surname-input" type="text" name="surname" placeholder="Иванов" required>
+            </label>
+            <label>
+              Отчество:
+              <input class="middle-name-input" type="text" name="middle-name" placeholder="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="feedback-item feedback-contacts">
+            <legend>Контактная информация:</legend>
+            <label>
+              Контактный телефон*:
+              <input class="tel-input" type="tel" name="telephone" placeholder="Введите телефон" required>
+            </label>
+            <label>
+              Электронная почта*:
+              <input class="email-input" type="email" name="email" placeholder="Введите e-mail" required>
+            </label>
+          </fieldset>
+          <fieldset class="feedback-item feedback-impression">
+            <legend>Ваше общее впечатление:</legend>
+            <label class="radio check option">
+              <input class="radio-input" type="radio" name="impression" value="positive" checked>
+              Скорее положительное
+            </label>
+            <label class="radio check option">
+              <input class="radio-input" type="radio" name="impression" value="negative">
+              Скорее отрицательное
+            </label>
+            <label class="radio check option">
+              <input class="radio-input" type="radio" name="impression" value="baffling">
+              Затрудняюсь ответить
+            </label>
+          </fieldset>
+          <fieldset class="feedback-item feedback-visited">
+            <legend>Посещённые достопремечаетльности:</legend>
+            <label class="check box option">
+              <input class="check-input" type="checkbox" name="visited" value="Devils bridge" checked>
+              Мост Дьявола
+            </label>
+            <label class="check box option">
+              <input class="check-input" type="checkbox" name="visited" value="Mount Bell" checked>
+              Гора-Колокол
+            </label>
+            <label class="check box option">
+              <input class="check-input" type="checkbox" name="visited" value="Slide park" checked>
+              Слайд-парк
+            </label>
+            <label class="check box option">
+              <input class="check-input" type="checkbox" name="visited" value="Red rocks">
+              Красные скалы
+            </label>
+          </fieldset>
+          <fieldset class="feedback-item feedback-comment">
+            <legend>Опишите свои эмоции:</legend>
+            <textarea
+              class="comment-input"
+              placeholder="Опишите подробно все свои восторги"
+              name="comment"
+              aria-label="Комментарий"></textarea>
+          </fieldset>
+          <button class="button form-button" type="submit">Отправить отзыв</button>
+        </form>
       </section>
     </main>
 
@@ -125,6 +137,27 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-error__container modal">
+      <div class="text-container">
+        <b class="bold-text">Что-то пошло не так!</b>
+        <p class="text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
+      <button class="button modal-error--ok" type="button">Ок</button>
+    </div>
+    <div class="review-sent__container modal">
+      <div class="text-container">
+        <b class="bold-text">Ваш отзыв отправлен!</b>
+        <p class="text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="review-sent__container">
+        <button class="button review-sent--close" type="button">Закрыть окно</button>
+      </div>
+    </div>
     <!--<script src="js/script.js"></script> .min-->
   </body>
 </html>
