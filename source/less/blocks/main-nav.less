@@ -1,0 +1,30 @@
+.main-nav{
+  background-color: @main-nav-background;
+}
+
+.main-nav__item{
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.main-nav__item:not(:first-child){
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__item:not(:last-child){
+  margin-bottom: 1px;
+}
+
+.main-nav__item a{
+  color: @white;
+}
+
+.main-nav-container{
+  position: relative;
+}
+
+.main-nav__button-close{
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
