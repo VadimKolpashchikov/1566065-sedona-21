@@ -1,39 +1,46 @@
-body{
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   width: 320px;
+  min-height: 100%;
   padding: 0;
   margin: 0 auto;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  text-transform: uppercase;
   color: @black;
   background-color: @white;
 }
 
 .page-body p,
 .page-body ul,
-.page-body h3,
-.page-body h2,
-.page-body h4{
+.page-body h3 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
-.page-body a{
+.page-body a {
   text-decoration: none;
 }
 
-.page-body ul{
+.page-body ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -42,13 +49,29 @@ img{
   overflow: hidden;
 }
 
-.button{
+.button {
+  width: 280px;
+  min-height: 58px;
+  padding: 10px 45px;
   font-size: 21px;
   line-height: 26px;
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
   background-color: @blue;
   color: @white;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: @blue-button-hover;
+}
+
+.button:active {
+  color: @white-button-active;
+  background-color: @blue-button-active;
 }
