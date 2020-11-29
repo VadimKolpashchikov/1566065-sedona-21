@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Форма отзыва</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,30 +11,28 @@
       <div class="main-nav-container modal">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item button"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item button"><a href="catalog.html">Фото и видео</a></li>
-            <li class="main-nav__item button"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item button"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="button" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="button" href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="button" href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="button" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
         <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
       </div>
       <div class="page-header__container">
         <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
-        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
-          <img src="img/header/logo.svg" width="102" height="84" alt="Логотип города Седона">
+        <a class="page-header__logo" href="#" aria-label="ссылка на главную страницу">
+          <img src="img/logo.svg" width="102" height="84" alt="Логотип города Седона">
         </a>
       </div>
-      <div class="form-header__img-container">
-        <img src="" width="901" height="389" alt="Природа города Седона">
-      </div>
+      <div class="form-header__img-container"></div>
     </header>
 
     <main class="page-main form-main">
       <h1 class="visually-hidden">Форма отзыва</h1>
       <section class="feedback">
         <div class="text-container">
-          <b class="text_keynote">Оставте свой отзыв</b>
+          <p class="text_keynote">Оставте свой отзыв</p>
           <p class="text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
@@ -142,7 +140,7 @@
 
     <div class="modal-error modal">
       <div class="text-container">
-        <b class="text_keynote">Что-то пошло не так!</b>
+        <p class="text_keynote">Что-то пошло не так!</p>
         <p class="text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
@@ -151,7 +149,7 @@
     </div>
     <div class="review-sent modal">
       <div class="text-container">
-        <b class="text_keynote">Ваш отзыв отправлен!</b>
+        <p class="text_keynote">Ваш отзыв отправлен!</p>
         <p class="text">
           Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
         </p>
