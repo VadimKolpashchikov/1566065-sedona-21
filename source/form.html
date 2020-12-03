@@ -2,13 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <title>HTML Academy: Форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header form-header">
-      <div class="main-nav-container modal">
+      <div class="main-nav-container">
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="button" href="index.html">Главная</a></li>
@@ -21,7 +20,7 @@
       </div>
       <div class="page-header__container">
         <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
-        <a class="page-header__logo" href="#" aria-label="ссылка на главную страницу">
+        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
           <img src="img/logo.svg" width="102" height="84" alt="Логотип города Седона">
         </a>
       </div>
@@ -38,8 +37,9 @@
           </p>
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__user-name">
-            <legend>Представтесь:</legend>
+            <legend class="feedback-form__title">Представтесь:</legend>
             <label>
               Имя*:
               <input class="feedback-form__input" type="text" name="name" placeholder="Пётр" required>
@@ -53,10 +53,11 @@
               <input class="feedback-form__input" type="text" name="middle-name" placeholder="Александрович">
             </label>
           </fieldset>
+          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__contacts">
-            <legend>Контактная информация:</legend>
+            <legend class="feedback-form__title">Контактная информация:</legend>
             <label>
-              Контактный телефон*:
+              <span class="feedback-form__text-wrapper">Контактный телефон*:</span>
               <input
                 class="feedback-form__input tel-input"
                 type="tel" name="telephone"
@@ -65,7 +66,7 @@
               >
             </label>
             <label>
-              Электронная почта*:
+              <span class="feedback-form__text-wrapper">Электронная почта*:</span>
               <input
                 class="feedback-form__input
                 email-input"
@@ -76,8 +77,9 @@
               >
             </label>
           </fieldset>
+          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__impression">
-            <legend>Ваше общее впечатление:</legend>
+            <legend class="feedback-form__title">Ваше общее впечатление:</legend>
             <label class="radio check option">
               <input class="radio-input" type="radio" name="impression" value="positive" checked>
               Скорее положительное
@@ -91,8 +93,9 @@
               Затрудняюсь ответить
             </label>
           </fieldset>
+          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__visited">
-            <legend>Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
             <label class="check box option">
               <input class="check-input" type="checkbox" name="visited" value="Devils bridge" checked>
               Мост Дьявола
@@ -110,8 +113,9 @@
               Красные скалы
             </label>
           </fieldset>
+          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__comment">
-            <legend>Опишите свои эмоции:</legend>
+            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
             <textarea
               class="feedback-form__input input_comment"
               placeholder="Опишите подробно все свои восторги"
@@ -127,10 +131,11 @@
     </main>
 
     <footer class="page-footer">
+      <b>#VISITSEDONA</b>
       <div class="page-footer__social-container">
-        <a class="social-img" href="#" aria-label="twitter.com"></a>
-        <a class="social-img" href="#" aria-label="facebook.com"></a>
-        <a class="social-img" href="#" aria-label="youtube.com"></a>
+        <a class="page-footer__social-img" href="#" aria-label="twitter.com"></a>
+        <a class="page-footer__social-img" href="#" aria-label="facebook.com"></a>
+        <a class="page-footer__social-img" href="#" aria-label="youtube.com"></a>
       </div>
       <div class="page-footer__address-container">
         <p class="address-text">Разработано</p>

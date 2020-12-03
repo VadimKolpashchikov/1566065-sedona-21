@@ -7,14 +7,14 @@
   justify-content: center;
   align-items: stretch;
   vertical-align: center;
-}
 
-.main-nav__item:not(:first-child) {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
+  &:not(:first-child) {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
 
-.main-nav__item:not(:last-child) {
-  margin-bottom: 1px;
+  &:not(:last-child) {
+    margin-bottom: 1px;
+  }
 }
 
 .main-nav__item a {
@@ -26,6 +26,19 @@
 
 .main-nav-container {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: url("../img/main-nav__shadow.png");
+    z-index: 2;
+  }
 }
 
 .main-nav__button-close {
