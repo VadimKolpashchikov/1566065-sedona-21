@@ -1,0 +1,21 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.media__border {
+  margin-bottom: 0;
+}
+
+.media__item {
+  width: 100%;
+  padding: 22px 20px 21px;
+  box-sizing: border-box;
+
+  &:nth-child(1) {
+    border-top: 1px solid @border;
+  }
+}

@@ -1,0 +1,21 @@
+.modal-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 280px;
+  padding: 8px 20px 35px;
+  box-sizing: border-box;
+  background-color: @page-background;
+  box-shadow: 0 7px 15px @modal-shadow;
+  z-index: 1003;
+}
+
+.modal-error__button-ok {
+  width: 180px;
+}

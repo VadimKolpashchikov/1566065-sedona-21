@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Каталог медиаматериалов</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <div class="main-nav-container modal">
+    <header class="page-header catalog-header">
+      <div class="main-nav-container">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item button"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item button"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item button"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item button"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+            <li class="main-nav__item"><a class="button" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="button" href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="button" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="button" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
         <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
       </div>
-      <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
-      <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
-        <img src="" width="102" height="84" alt="Логотип города Седона">
-      </a>
-      <div class="page-header__img-container">
-        <img src="" width="901" height="389" alt="Природа города Седона">
+      <div class="page-header__container">
+        <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
+        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
+          <img src="img/logo.svg" width="102" height="84" alt="Логотип города Седона">
+        </a>
       </div>
+      <div class="catalog-header__img-container"></div>
     </header>
 
     <main class="page-main catalog-main">
@@ -38,8 +37,8 @@
           </p>
         </div>
         <figure class="media__item photo">
-          <a class="photo__img">
-            <img src="" width="280" height="280" alt="Просторы Cедоны">
+          <a class="photo__img" href="#">
+            <img src="img/photo-1.jpg" width="280" height="280" alt="Просторы Cедоны">
           </a>
           <div class="photo__caption-container">
             <div class="photo__info-container">
@@ -53,8 +52,8 @@
           </div>
         </figure>
         <figure class="media__item photo">
-          <a class="photo__img">
-            <img src="" width="280" height="280" alt="Растительность Cедоны">
+          <a class="photo__img" href="#">
+            <img src="img/photo-2.jpg" width="280" height="280" alt="Растительность Cедоны">
           </a>
           <div class="photo__caption-container">
             <div class="photo__info-container">
@@ -68,8 +67,8 @@
           </div>
         </figure>
         <figure class="media__item photo">
-          <a class="photo__img">
-            <img src="" width="280" height="280" alt="Дорога Седоны">
+          <a class="photo__img" href="#">
+            <img src="img/photo-3.jpg" width="280" height="280" alt="Дорога Седоны">
           </a>
           <div class="photo__caption-container">
             <div class="photo__info-container">
@@ -83,8 +82,8 @@
           </div>
         </figure>
         <figure class="media__item photo">
-          <a class="photo__img">
-            <img src="" width="280" height="280" alt="Мост дьявола">
+          <a class="photo__img" href="#">
+            <img src="img/photo-4.jpg" width="280" height="280" alt="Мост дьявола">
           </a>
           <div class="photo__caption-container">
             <div class="photo__info-container">
@@ -97,6 +96,7 @@
             </div>
           </div>
         </figure>
+        <div class="media__border border"></div>
         <div class="text-container">
           <b class="text_keynote">Всё ещё сомневаетесь?</b>
           <p class="text">
@@ -104,13 +104,12 @@
           </p>
         </div>
         <div class="media__item player">
-          <img src="" width="320" height="201" alt="Видеопрезентация">
-          <div class="player__loading-bar-container">
-            <div class="player__loading-bar">
-              <div class="player__loading-bar_loaded">
-                <div class="player__loading-bar_progress"></div>
+          <div class="player__container">
+            <img src="img/video.jpg" width="320" height="201" alt="Видеопрезентация">
+            <div class="player__loading-bar-container">
+              <div class="player__loading-bar">
+                <span class="player__thumb" tabindex="0" aria-label="Тумблер плеера"></span>
               </div>
-              <span class="player__loading-bar__thumb" tabindex="0" aria-label="Тумблер плеера"></span>
             </div>
           </div>
           <div class="player__buttons-container">
@@ -125,10 +124,11 @@
     </main>
 
     <footer class="page-footer">
+      <b>#VISITSEDONA</b>
       <div class="page-footer__social-container">
-        <a class="social-img" href="#" aria-label="twitter.com"></a>
-        <a class="social-img" href="#" aria-label="facebook.com"></a>
-        <a class="social-img" href="#" aria-label="youtube.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com"></a>
       </div>
       <div class="page-footer__address-container">
         <p class="address-text">Разработано</p>
