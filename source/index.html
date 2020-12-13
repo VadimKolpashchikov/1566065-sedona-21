@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -12,17 +13,19 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="button" href="#">Главная</a></li>
             <li class="main-nav__item"><a class="button" href="catalog.html">Фото и видео</a></li>
+          </ul>
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a class="button" href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="button" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
         <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
-      </div>
-      <div class="page-header__container">
-        <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
         <a class="page-header__logo" href="#" aria-label="ссылка на главную страницу">
           <img src="img/logo.svg" width="102" height="84" alt="Логотип города Седона">
         </a>
+      </div>
+      <div class="page-header__container">
+        <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
       </div>
       <div class="index-header__img-container"></div>
     </header>
@@ -37,14 +40,12 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantage">
-            <div class="advantage__text-container">
+            <div class="advantage__text-container" aria-label="кадр с улиц Седоны">
               <p class="advantage__text_keynote text_keynote">Настоящий городок</p>
               <span>— №1 —</span>
               <p>Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div class="advantage__img-container">
-              <img src="img/photo-city.jpg" width="320" height="260" alt="Кадр с улиц Седоны">
-            </div>
+            <div class="advantage__img-container"></div>
             <div>
               <ul class="advantage__list">
                 <li class="advantage__item">
@@ -68,9 +69,7 @@
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantage__img-container">
-              <img src="img/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола">
-            </div>
+            <div class="advantage__img-container advantage__img-first" aria-label="мост дьявола"></div>
           </li>
           <li class="advantages__item advantage advantage_short">
             <p class="advantage__text_keynote text_keynote">Небольшая площадь</p>
@@ -99,9 +98,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <a class="map__link" href="https://goo.gl/maps/uQ7ARYF98ZbJYkZb7">
-          <img src="img/map-small.jpg" width="320" height="350" alt="Карта">
-        </a>
+        <a class="map__link" href="https://goo.gl/maps/uQ7ARYF98ZbJYkZb7" aria-label="Карта"></a>
       </section>
     </main>
 

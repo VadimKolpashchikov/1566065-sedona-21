@@ -20,10 +20,22 @@
 }
 
 .advantage__img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 260px;
+  min-width: 320px;
+}
+
+.advantage:nth-child(1) .advantage__img-container {
+  background-image: url("../img/photo-city.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantage:nth-child(2) .advantage__img-container {
+  background-image: url("../img/photo-bridge.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .advantage__list {
@@ -70,6 +82,63 @@
       height: 1px;
       background-color: @line_dark-gray;
       z-index: 1;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: center;
+    padding: 158px 0 60px;
+    margin-left: 0;
+  }
+
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage__img-container {
+    flex-basis: 512px;
+    min-height: 256px;
+    flex-grow: 2;
+    flex-shrink: 1;
+  }
+
+  .advantage__img-first {
+    order: -1;
+  }
+
+  .advantage__item {
+    padding: 0 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .advantage__text-container {
+    flex-basis: 256px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .advantage__text-container {
+    min-width: 256px;
+    min-height: 256px;
+    padding: 30px 54px 50px 54px;
+  }
+
+  .advantages__list .advantage_short {
+    min-width: 256px;
+    min-height: 256px;
+    padding: 30px 54px 50px 54px;
+
+    &::after {
+      content: none;
     }
   }
 }
