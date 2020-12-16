@@ -42,7 +42,9 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__user-name">
-            <legend class="feedback-form__title">Представтесь:</legend>
+            <legend class="feedback-form__legend">
+              <span class="feedback-form__title">Представтесь:</span>
+            </legend>
             <label>
               Имя*:
               <input class="feedback-form__input" type="text" name="name" placeholder="Пётр" required>
@@ -58,9 +60,11 @@
           </fieldset>
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__contacts">
-            <legend class="feedback-form__title">Контактная информация:</legend>
+            <legend class="feedback-form__legend">
+              <span class="feedback-form__title">Контактная информация:</span>
+            </legend>
             <label>
-              <span class="feedback-form__text-wrapper">Контактный телефон*:</span>
+              <span class="feedback-form__text-wrapper feedback-form__tell">Контактный телефон*:</span>
               <input
                 class="feedback-form__input tel-input"
                 type="tel" name="telephone"
@@ -82,7 +86,9 @@
           </fieldset>
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__impression">
-            <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__legend">
+              <span class="feedback-form__title">Ваше общее впечатление:</span>
+            </legend>
             <label class="radio check option">
               <input class="radio-input" type="radio" name="impression" value="positive" checked>
               Скорее положительное
@@ -98,27 +104,31 @@
           </fieldset>
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__visited">
-            <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
-            <label class="check box option">
+            <legend class="feedback-form__legend">
+              <span class="feedback-form__title">Посещенные достопримечательности:</span>
+            </legend>
+            <label class="check feedback-form__box option">
               <input class="check-input" type="checkbox" name="visited" value="Devils bridge" checked>
               Мост Дьявола
             </label>
-            <label class="check box option">
+            <label class="check feedback-form__box option">
               <input class="check-input" type="checkbox" name="visited" value="Mount Bell" checked>
               Гора-Колокол
             </label>
-            <label class="check box option">
+            <label class="check feedback-form__box option">
               <input class="check-input" type="checkbox" name="visited" value="Slide park" checked>
               Слайд-парк
             </label>
-            <label class="check box option">
+            <label class="check feedback-form__box option">
               <input class="check-input" type="checkbox" name="visited" value="Red rocks">
               Красные скалы
             </label>
           </fieldset>
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__comment">
-            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__legend">
+              <span class="feedback-form__title">Опишите свои эмоции:</span>
+            </legend>
             <textarea
               class="feedback-form__input input_comment"
               placeholder="Опишите подробно все свои восторги"
@@ -127,7 +137,7 @@
           </fieldset>
           <div class="feedback-form__button-container">
             <button class="button feedback-form__button-submit" type="submit">Отправить отзыв</button>
-            <p class="feedback-form__legend text"><sup>*</sup> - обязательные поля</p>
+            <p class="feedback-form__direction text"><sup>*</sup> - обязательные поля</p>
           </div>
         </form>
       </section>

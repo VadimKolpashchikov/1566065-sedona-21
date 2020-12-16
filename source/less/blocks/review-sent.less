@@ -6,7 +6,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 320px;
   height: 323px;
   padding: 6px 20px 0;
@@ -17,6 +17,37 @@
 }
 
 .review-sent__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 20px;
   background-color: @feedback-form__input;
+}
+
+@media (min-width: @tablet-width) {
+  .review-sent {
+    width: 640px;
+    height: 347px;
+    padding: 55px 0 0;
+  }
+
+  .review-sent__button-container {
+    min-height: 146px;
+    box-sizing: border-box;
+  }
+
+  .review-sent__button-close {
+    min-width: 458px;
+  }
+
+  .review-sent .text-container {
+    padding: 0 120px;
+  }
+
+  .review-sent .text_keynote {
+    padding: 0 0 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
