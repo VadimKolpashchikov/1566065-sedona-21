@@ -158,13 +158,9 @@
   .feedback-form {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px 0 60px;
+    padding: 0 60px;
     margin-bottom: 61px;
     box-sizing: border-box;
-  }
-
-  .border {
-    display: none;
   }
 
   .feedback-form__item {
@@ -179,7 +175,7 @@
     flex-basis: 324px;
     flex-grow: 1;
     margin-bottom: 72px;
-    border-right: 1px solid @border;
+    border-right: 1px solid @border-tablet-width;
     box-sizing: border-box;
   }
 
@@ -199,6 +195,7 @@
   }
 
   .feedback-form__user-name .feedback-form__legend {
+    justify-content: flex-start;
     margin-bottom: 54px;
   }
 
@@ -213,7 +210,7 @@
   }
 
   .feedback-form__contacts .feedback-form__legend {
-    background: linear-gradient(@border, @border) center no-repeat;
+    background: linear-gradient(@border-tablet-width, @border-tablet-width) center no-repeat;
     background-size: 100% 1px;
   }
 
@@ -236,7 +233,7 @@
 
   .feedback-form__visited .feedback-form__legend {
     margin-bottom: 47px;
-    background: linear-gradient(@border, @border) center no-repeat;
+    background: linear-gradient(@border-tablet-width, @border-tablet-width) center no-repeat;
     background-size: 100% 1px;
   }
 
@@ -264,7 +261,7 @@
 
   .feedback-form__comment .feedback-form__legend {
     margin-bottom: 54px;
-    background: linear-gradient(@border, @border) center no-repeat;
+    background: linear-gradient(@border-tablet-width, @border-tablet-width) center no-repeat;
     background-size: 100% 1px;
   }
 
@@ -297,16 +294,17 @@
     margin-bottom: 66px;
   }
 
-  .feedback__text-container {
-    padding-bottom: 56px;
-  }
-
   .feedback-form__user-name {
     margin-bottom: 70px;
   }
 
   .feedback-form__impression {
     margin-bottom: 70px;
+  }
+
+  .feedback-form__impression .feedback-form__legend {
+    justify-content: flex-start;
+    padding-left: 78px;
   }
 
   .feedback-form__contacts {
