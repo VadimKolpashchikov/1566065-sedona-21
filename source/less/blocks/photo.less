@@ -42,3 +42,75 @@
 .photo__approval-button {
   margin-right: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .photo {
+    border-top: none;
+  }
+
+  .photo__img {
+    min-height: 267px;
+  }
+
+  .photo_full {
+    min-width: 100%;
+    min-height: 480px;
+    order: -1;
+  }
+
+  .photo_full .photo__img {
+    min-height: 400px;
+  }
+
+  .photo__caption-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    margin-top: 0;
+    padding: 15px 20px;
+    background-color: @feedback-form__input;
+    box-sizing: border-box;
+  }
+
+  .photo:nth-child(2n-1) .photo__caption-container {
+    background-color: @photo-caption;
+  }
+
+  .photo:first-child .photo__caption-container {
+    background-color: @feedback-form__input;
+  }
+
+  .photo__info-container {
+    margin: 0;
+  }
+
+  .photo__approval-container {
+    min-width: 64px;
+    text-align: left;
+  }
+
+  .photo__approval-button {
+    margin-right: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    position: relative;
+    min-height: 267px;
+  }
+
+  .photo:nth-child(1n) .photo__caption-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: @page-background;
+    background: @photo-caption_desktop;
+  }
+
+  .photo_full {
+    min-height: 400px;
+  }
+}

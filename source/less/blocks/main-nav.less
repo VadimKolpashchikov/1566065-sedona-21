@@ -77,6 +77,17 @@
     line-height: 26px;
     color: @text;
     background-color: @page-background;
+
+    &:hover,
+    &:focus {
+      color: @background_colorful;
+      background-color: @page-background;
+    }
+
+    &:active {
+      color: @text;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__button-close {
