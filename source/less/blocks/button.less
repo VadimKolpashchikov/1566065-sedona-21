@@ -24,3 +24,17 @@
     background-color: @button-active;
   }
 }
+
+.button_disabled {
+  background-color: @border;
+
+  &:hover,
+  &:focus {
+    background-color: @border;
+  }
+
+  &:active {
+    color: @page-background;
+    background-color: @border;
+  }
+}

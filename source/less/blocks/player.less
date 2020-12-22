@@ -3,14 +3,13 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin-top: 17px;
+  margin: 17px auto 0;
   width: 100%;
   max-width: 400px;
 }
 
-.player__container {
+.player__video-container {
   display: flex;
-  position: relative;
   width: 100%;
   min-height: 200px;
   background-color: @background-advantage_short;
@@ -18,24 +17,34 @@
   background-size: 100% 100%;
 }
 
+.player__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 87.5%;
+  height: 66px;
+  padding: 10px 23px;
+  box-sizing: border-box;
+  background-color: @feedback-form__input;
+}
+
 .player__loading-bar-container {
   display: flex;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 280px;
+  width: 100%;
   min-height: 45px;
-  background-color: @text;
-  opacity: 0.6;
+  background-color: @player__control;
 }
 
 .player__loading-bar {
   position: relative;
-  width: 235px;
+  width: 84%;
   height: 3px;
   background-color: @player__loading-bar;
 }
@@ -43,7 +52,7 @@
 .player__thumb {
   position: absolute;
   top: -3px;
-  left: 36px;
+  left: 15.3%;
   width: 9px;
   height: 9px;
   background-color: @page-background;
@@ -52,24 +61,12 @@
   z-index: 4;
 }
 
-.player__buttons-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  height: 66px;
-  margin: 0 20px;
-  padding: 10px 23px;
-  box-sizing: border-box;
-  background-color: @feedback-form__input;
+.player__button {
+  cursor: pointer;
 
-  & button:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 31px;
   }
-}
-
-.player__buttons-container button {
-  cursor: pointer;
 }
 
 .player__buttons-wrapper {
@@ -86,38 +83,28 @@
     min-height: 500px;
   }
 
-  .player__container {
+  .player__video-container {
     width: 100%;
     min-height: 500px;
   }
 
   .player__loading-bar-container {
-    left: 93px;
+    position: static;
     transform: translateX(0);
     width: 60%;
-    height: 93px;
     background: none;
-    z-index: 4;
   }
 
   .player__loading-bar {
     width: 100%;
   }
 
-  .player__thumb {
-    left: 113px;
-  }
-
-  .player__buttons-container {
+  .player__control {
     position: absolute;
+    left: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
-    height: 93px;
-    margin: 0;
-    background-color: @text;
-    opacity: 0.6;
+    background-color: @player__control;
   }
 }
 

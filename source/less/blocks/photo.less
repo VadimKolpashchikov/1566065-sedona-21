@@ -46,10 +46,12 @@
 @media (min-width: @tablet-width) {
   .photo {
     border-top: none;
+    min-height: 347px;
+    background-color: @background-advantage_short;
   }
 
   .photo__img {
-    min-height: 267px;
+    min-height: 100%;
   }
 
   .photo_full {
@@ -58,17 +60,13 @@
     order: -1;
   }
 
-  .photo_full .photo__img {
-    min-height: 400px;
-  }
-
   .photo__caption-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     min-height: 80px;
-    margin-top: 0;
+    margin-top: auto;
     padding: 15px 20px;
     background-color: @feedback-form__input;
     box-sizing: border-box;

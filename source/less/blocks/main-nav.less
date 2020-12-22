@@ -90,6 +90,19 @@
     }
   }
 
+  .main-nav__item_active a {
+    color: @main-nav__item_active;
+
+    &:hover,
+    &:focus {
+      color: @main-nav__item_active-hover;
+    }
+
+    &:active {
+      color: @main-nav__item_active-active;
+    }
+  }
+
   .main-nav__button-close {
     display: none;
   }
