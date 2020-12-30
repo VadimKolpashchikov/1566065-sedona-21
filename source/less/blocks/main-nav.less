@@ -39,10 +39,87 @@
   }
 }
 
+.main-nav__button-toggle {
+  position: relative;
+  width: 23px;
+  height: 22px;
+  background-color: @page-background;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 23px;
+    height: 4px;
+    background-color: @background_colorful;
+    box-shadow:
+      0 9px 0 0 @background_colorful,
+      0 18px 0 0 @background_colorful;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: fade(@background_colorful, 60%);
+    box-shadow:
+      0 9px 0 0 fade(@background_colorful, 60%),
+      0 18px 0 0 fade(@background_colorful, 60%);
+  }
+
+  &:active::after {
+    background-color: fade(@background_colorful, 30%);
+    box-shadow:
+      0 9px 0 0 fade(@background_colorful, 30%),
+      0 18px 0 0 fade(@background_colorful, 30%);
+  }
+}
+
 .main-nav__button-close {
   position: absolute;
   top: 17px;
   right: 20px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -3px;
+    width: 27px;
+    height: 4px;
+    background-color: @page-background;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -3px;
+    width: 27px;
+    height: 4px;
+    background-color: @page-background;
+    transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:hover::before,
+  &:focus::before {
+    background-color: fade(@page-background, 60%);
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: fade(@page-background, 30%);
+  }
 }
 
 @media (min-width: @tablet-width) {

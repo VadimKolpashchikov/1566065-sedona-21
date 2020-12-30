@@ -1,6 +1,10 @@
 .photo {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid @border;
   line-height: 24px;
+  min-height: 415px;
+  box-sizing: border-box;
 }
 
 .photo__img {
@@ -10,11 +14,34 @@
   width: 100%;
   min-height: 280px;
   background-color: @background-advantage_short;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   cursor: pointer;
+
+  &_vastness-sedona {
+    background-image: url("../img/vastness-sedona.jpg");
+  }
+
+  &_vegetation-sedona {
+    background-image: url("../img/vegetation-sedona.jpg");
+  }
+
+  &_sedona-road {
+    background-image: url("../img/sedona-road.jpg");
+  }
+
+  &_devil-bridge {
+    background-image: url("../img/devil-bridge.jpg");
+  }
 }
 
 .photo__caption-container {
-  margin-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
 }
 
 .photo__info-container {
@@ -40,18 +67,23 @@
 }
 
 .photo__approval-button {
+  width: 23px;
+  height: 21px;
   margin-right: 14px;
+  margin-bottom: 4px;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
   .photo {
     border-top: none;
     min-height: 347px;
+    max-width: 50%;
     background-color: @background-advantage_short;
   }
 
   .photo__img {
-    min-height: 100%;
+    min-height: 267px;
   }
 
   .photo_full {
@@ -60,8 +92,13 @@
     order: -1;
   }
 
+  .photo__img_full {
+    min-height: 400px;
+  }
+
   .photo__caption-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;

@@ -26,6 +26,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a1 a1 a1""a2 a2 a2""a3 a4 a5";
+    padding-top: 41px;
     padding-bottom: 26px;
 
     &::before {
@@ -53,5 +54,11 @@
     &:nth-child(5) {
       grid-area: a5;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    padding-top: 29px;
   }
 }

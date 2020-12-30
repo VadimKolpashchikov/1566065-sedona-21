@@ -20,9 +20,7 @@
           </ul>
         </nav>
         <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
-        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип города Седона">
-        </a>
+        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу"> </a>
       </div>
       <div class="page-header__container">
         <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
@@ -34,7 +32,7 @@
       <h1 class="visually-hidden">Форма отзыва</h1>
       <section class="feedback">
         <div class="text-container feedback__text-container">
-          <p class="text_keynote">Оставте свой отзыв</p>
+          <p class="text_keynote feedback__text_keynote">Оставьте свой отзыв</p>
           <p class="text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
@@ -43,7 +41,7 @@
           <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__user-name">
             <legend class="feedback-form__legend">
-              <span class="feedback-form__title">Представтесь:</span>
+              <span class="feedback-form__title">Представьтесь:</span>
             </legend>
             <label>
               Имя*:
@@ -130,14 +128,14 @@
               <span class="feedback-form__title">Опишите свои эмоции:</span>
             </legend>
             <textarea
-              class="feedback-form__input input_comment"
+              class="feedback-form__input feedback-form__input_comment"
               placeholder="Опишите подробно все свои восторги"
               name="comment"
               aria-label="Комментарий"></textarea>
           </fieldset>
           <div class="feedback-form__button-container">
-            <button class="button feedback-form__button-submit" type="submit">Отправить отзыв</button>
-            <p class="feedback-form__direction text"><sup>*</sup> - обязательные поля</p>
+            <input class="button feedback-form__button-submit" type="submit" value="Отправить отзыв">
+            <p class="feedback-form__direction text"><span>*</span> &mdash; обязательные поля</p>
           </div>
         </form>
       </section>

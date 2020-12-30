@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 267px;
   padding: 0;
-  margin: 17px auto 0;
+  margin: 19px auto 0;
   width: 100%;
   max-width: 400px;
 }
@@ -15,6 +16,7 @@
   background-color: @background-advantage_short;
   background-image: url("../img/video.jpg");
   background-size: 100% 100%;
+  background-position: center;
 }
 
 .player__control {
@@ -24,7 +26,7 @@
   position: relative;
   width: 87.5%;
   height: 66px;
-  padding: 10px 23px;
+  padding: 12px 23px 10px 25px;
   box-sizing: border-box;
   background-color: @feedback-form__input;
 }
@@ -52,7 +54,7 @@
 .player__thumb {
   position: absolute;
   top: -3px;
-  left: 15.3%;
+  left: 29.3%;
   width: 9px;
   height: 9px;
   background-color: @page-background;
@@ -61,7 +63,13 @@
   z-index: 4;
 }
 
+.player__buttons-wrapper {
+  display: flex;
+}
+
 .player__button {
+  height: 20px;
+  border: none;
   cursor: pointer;
 
   &:not(:last-child) {
@@ -69,15 +77,23 @@
   }
 }
 
-.player__buttons-wrapper {
-  display: flex;
+.player__button_replay {
+  width: 16px;
+}
+
+.player__button_subtitles {
+  width: 32px;
+}
+
+.player__button_fullscreen {
+  width: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .player {
     align-items: flex-start;
     position: relative;
-    margin: 0 auto;
+    margin: 7px auto 0;
     min-width: 648px;
     max-width: 800px;
     min-height: 500px;
@@ -86,12 +102,14 @@
   .player__video-container {
     width: 100%;
     min-height: 500px;
+    background-size: 800px 500px;
   }
 
   .player__loading-bar-container {
     position: static;
     transform: translateX(0);
-    width: 60%;
+    width: 100%;
+    margin: 0 42px 0 11px;
     background: none;
   }
 
@@ -100,16 +118,13 @@
   }
 
   .player__control {
+    justify-content: flex-start;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 93px;
+    padding: 13px 41px 15px 35px;
     background-color: @player__control;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .player__loading-bar-container {
-    width: 67.5%;
   }
 }
