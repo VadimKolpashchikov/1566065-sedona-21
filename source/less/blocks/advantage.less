@@ -14,12 +14,13 @@
   padding: 39px 12px 40px;
 }
 
-.advantage__text_keynote {
-  padding-bottom: 0;
-}
-
 .advantage__text {
   padding-top: 16px;
+
+  &_keynote,
+  &_short {
+    padding-bottom: 0;
+  }
 }
 
 .advantage__img-container {
@@ -30,15 +31,23 @@
 .advantage__img-street {
   background-image: url("../img/photo-city.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 520px 260px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-city@2x.jpg");
+  }
 }
 
 .advantage__img-devils-bridge {
   background-image: url("../img/photo-bridge.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 520px 260px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge@2x.jpg");
+  }
 }
 
 .advantage__list {
@@ -97,6 +106,14 @@
     text-align: center;
     padding: 158px 0 60px;
     margin-left: 0;
+
+    &_keynote {
+      padding: 0 4px 0 2px;
+    }
+
+    &_short {
+      padding: 0 10px;
+    }
   }
 
   .advantage {
@@ -119,7 +136,12 @@
     flex-shrink: 1;
   }
 
+  .advantage__img-street {
+    background-size: 100%;
+  }
+
   .advantage__img-devils-bridge {
+    background-size: 100%;
     order: -1;
   }
 
@@ -154,10 +176,6 @@
     padding: 44px 50px 42px;
   }
 
-  .advantage__text_keynote {
-    padding: 0 4px 0 2px;
-  }
-
   .advantages__list .advantage_short {
     min-width: 256px;
     min-height: 256px;
@@ -166,10 +184,6 @@
     &::after {
       content: none;
     }
-  }
-
-  .advantage_short .advantage__text_keynote {
-    padding: 0 10px;
   }
 
   .advantage_short .advantage__number {
@@ -190,12 +204,14 @@
     padding: 0 50px;
   }
 
-  .advantage__text_keynote {
-    padding: 0 40px;
-  }
+  .advantage__text {
+    &_keynote {
+      padding: 0 40px;
+    }
 
-  .advantage_short .advantage__text_keynote {
-    padding: 0 90px;
+    &_short {
+      padding: 0 90px;
+    }
   }
 
   .advantage__line-break {
@@ -208,5 +224,9 @@
 
   .advantage__text-container {
     padding: 52px 85px 54px;
+  }
+
+  .advantage__img-devils-bridge {
+    background-position: 50% -15px;
   }
 }

@@ -17,7 +17,6 @@
   width: 102px;
   height: 84px;
   transform: translateX(-50%);
-  background-image: url("../img/logo.svg");
   z-index: 2;
 }
 
@@ -30,6 +29,14 @@
       url("../img/text-header-index.svg") 50% 90px no-repeat,
       url("../img/header-index.jpg") 50% 50% no-repeat;
     background-size: 1200px 57px, 282px 214px, 901px 389px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        ~"@{triangle}",
+        url("../img/text-header-index.svg") 50% 90px no-repeat,
+        url("../img/header-index@2x.jpg") 50% 50% no-repeat;
+      background-size: 1200px 57px, 282px 214px, 901px 389px;
+    }
   }
 
   &_form,
@@ -39,8 +46,16 @@
     background:
       ~"@{triangle}",
       url("../img/text-header-form.svg") 50% 52px no-repeat,
-      url("../img/header-form.jpg") 50% 100% no-repeat;
-    background-size: 1200px 57px, 229px 41px, 902px 270px;
+      url("../img/header-index.jpg") 50% 100% no-repeat;
+    background-size: 1200px 57px, 229px 41px, 902px 389px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        ~"@{triangle}",
+        url("../img/text-header-form.svg") 50% 52px no-repeat,
+        url("../img/header-index@2x.jpg") 50% 100% no-repeat;
+      background-size: 1200px 57px, 229px 41px, 902px 389px;
+    }
   }
 }
 
@@ -55,7 +70,6 @@
 
   .page-header__logo {
     top: 0;
-    background-image: url("../img/logo-tablet.svg");
   }
 
   .page-header__img-container {
@@ -63,6 +77,14 @@
       min-height: 518px;
       background-size: 1200px 57px, 460px 350px, 1200px 518px;
       background-position: 50% 100%, 50% 77px, 50% 50%;
+
+      @media (min-resolution: 2dppx) {
+        background:
+          ~"@{triangle}",
+          url("../img/text-header-index.svg") 50% 77px no-repeat,
+          url("../img/header-index@2x.jpg") 50% 50% no-repeat;
+        background-size: 1200px 57px, 460px 350px, 1200px 518px;
+      }
     }
 
     &_form,
@@ -70,6 +92,14 @@
       min-height: 290px;
       background-size: 1200px 57px, 457px 78px, 1200px 518px;
       background-position: 50% 100%, 50% 95px, 50% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background:
+          ~"@{triangle}",
+          url("../img/text-header-form.svg") 50% 95px no-repeat,
+          url("../img/header-index@2x.jpg") 50% 100% no-repeat;
+        background-size: 1200px 57px, 457px 78px, 1200px 518px;
+      }
     }
   }
 
@@ -94,8 +124,6 @@
     align-items: flex-start;
     width: 187px;
     height: 97px;
-    background-image: url("../img/logo-desktop.svg");
-    background-position: top center;
   }
 
   .page-header__img-container {

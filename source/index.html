@@ -19,11 +19,17 @@
             <li class="main-nav__item"><a class="button" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
-        <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
-        <a class="page-header__logo" href="#" aria-label="ссылка на главную страницу"></a>
+        <button class="page-header__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
+        <a class="page-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo.svg" alt="ссылка на главную страницу">
+          </picture>
+        </a>
       </div>
       <div class="page-header__container">
-        <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
+        <button class="page-header__button-toggle" type="button" aria-label="Открыть меню"></button>
       </div>
       <div class="page-header__img-container_index"></div>
     </header>
@@ -53,7 +59,7 @@
                 <li class="advantage__item advantage__item_souvenirs">
                   <p class="advantage__text_keynote text_keynote">Сувениры</p>
                   <p class="advantage__text text">
-                    Не только китайского,<br class="line-break line-break_desktop">
+                    Не только китайского,
                     но и местного производства!
                   </p>
                 </li>
@@ -73,17 +79,17 @@
             <div class="advantage__img-container advantage__img-devils-bridge" aria-label="мост дьявола"></div>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_keynote text_keynote">Небольшая площадь</p>
+            <p class="advantage__text_short text_keynote">Небольшая площадь</p>
             <span class="advantage__number">— №3 —</span>
             <p>Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_keynote text_keynote">Красивая дорога</p>
+            <p class="advantage__text_short text_keynote">Красивая дорога</p>
             <span class="advantage__number">— №4 —</span>
             <p>Ехать в Седону из Лас-&nbspВегаса совсем не&nbspскучно!</p>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_keynote text_keynote">Мало туристов</p>
+            <p class="advantage__text_short text_keynote">Мало туристов</p>
             <span class="advantage__number">— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -92,10 +98,10 @@
       <section class="check-in">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="check-in__text-container text-container">
-          <p class="check-in__text_keynote text_keynote">Заинтересовались?</p>
+          <p class="check-in_keynote text_keynote">Заинтересовались?</p>
           <p class="text">
-            Укажите предполагаемые даты поездки,<br class="line-break line-break_tablet">
-            и мы покажем вам лучшие предложения гостиниц в седоне
+            Укажите предполагаемые даты поездки,
+            и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в седоне
           </p>
         </div>
         <a class="check-in__button button" href="#">Найти гостиницу</a>

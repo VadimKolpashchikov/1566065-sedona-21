@@ -19,11 +19,17 @@
             <li class="main-nav__item"><a class="button" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
           </ul>
         </nav>
-        <button class="main-nav__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
-        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу"> </a>
+        <button class="page-header__button-close modal-close" type="button" aria-label="Закрыть меню"></button>
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo.svg" alt="ссылка на главную страницу">
+          </picture>
+        </a>
       </div>
       <div class="page-header__container">
-        <button class="main-nav__button-toggle" type="button" aria-label="Открыть меню"></button>
+        <button class="page-header__button-toggle" type="button" aria-label="Открыть меню"></button>
       </div>
       <div class="page-header__img-container_form"></div>
     </header>

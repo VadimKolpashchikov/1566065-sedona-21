@@ -14,9 +14,15 @@
   width: 100%;
   min-height: 200px;
   background-color: @background-advantage_short;
-  background-image: url("../img/video.jpg");
+  background-image: url("../img/video-mobile.jpg");
   background-size: 100% 100%;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 
 .player__control {
@@ -102,7 +108,13 @@
   .player__video-container {
     width: 100%;
     min-height: 500px;
-    background-size: 800px 500px;
+    background-image: url("../img/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 100% 100%;
+      background-position: center;
+    }
   }
 
   .player__loading-bar-container {
