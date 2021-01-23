@@ -51,11 +51,11 @@
             </legend>
             <label>
               Имя*:
-              <input class="feedback-form__input" type="text" name="name" placeholder="Пётр" required>
+              <input class="feedback-form__input input_required" type="text" name="name" placeholder="Пётр" required>
             </label>
             <label>
               Фамилия*:
-              <input class="feedback-form__input" type="text" name="surname" placeholder="Иванов" required>
+              <input class="feedback-form__input input_required" type="text" name="surname" placeholder="Иванов" required>
             </label>
             <label>
               Отчество:
@@ -67,20 +67,19 @@
             <legend class="feedback-form__legend">
               <span class="feedback-form__title">Контактная информация:</span>
             </legend>
-            <label>
+            <label class="feedback-form_label feedback-form_label_tel">
               <span class="feedback-form__text-wrapper feedback-form__tell">Контактный телефон*:</span>
-              <input
-                class="feedback-form__input tel-input"
-                type="tel" name="telephone"
-                placeholder="Введите телефон"
-                required
-              >
+                <input
+                  class="feedback-form__input feedback-form__input_tel input_required"
+                  type="tel" name="telephone"
+                  placeholder="Введите телефон"
+                  required
+                >
             </label>
-            <label>
+            <label class="feedback-form_label feedback-form_label_email">
               <span class="feedback-form__text-wrapper">Электронная почта*:</span>
               <input
-                class="feedback-form__input
-                email-input"
+                class="feedback-form__input feedback-form__input_email input_required"
                 type="email"
                 name="email"
                 placeholder="Введите e-mail"
@@ -94,15 +93,15 @@
               <span class="feedback-form__title">Ваше общее впечатление:</span>
             </legend>
             <label class="radio check option">
-              <input class="radio-input" type="radio" name="impression" value="positive" checked>
+              <input class="radio__input" type="radio" name="impression" value="positive" checked>
               Скорее положительное
             </label>
             <label class="radio check option">
-              <input class="radio-input" type="radio" name="impression" value="negative">
+              <input class="radio__input" type="radio" name="impression" value="negative">
               Скорее отрицательное
             </label>
             <label class="radio check option">
-              <input class="radio-input" type="radio" name="impression" value="baffling">
+              <input class="radio__input" type="radio" name="impression" value="baffling">
               Затрудняюсь ответить
             </label>
           </fieldset>
@@ -180,5 +179,6 @@
         <button class="button review-sent__button-close" type="button">Закрыть окно</button>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

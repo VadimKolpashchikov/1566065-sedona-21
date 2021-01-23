@@ -60,9 +60,32 @@
 .advantage__item {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 26px;
+  }
+
+  &_housing::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -48px;
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/sprite.svg#icon-house-view");
+  }
+
+  &_souvenirs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -48px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/sprite.svg#icon-gift-view");
   }
 }
 

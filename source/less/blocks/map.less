@@ -1,23 +1,6 @@
 .map {
   position: relative;
   margin-bottom: 10px;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-    background-color: @page-background;
-    background-image: url("../img/map-marker.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
 }
 
 .map__link {
