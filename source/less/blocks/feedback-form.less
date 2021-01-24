@@ -30,7 +30,7 @@
   margin-bottom: 21px;
 }
 
-.feedback-form_label {
+.feedback-form__label {
   position: relative;
 
   &_tel::after,
@@ -45,6 +45,20 @@
     background-color: @input_icon-background;
     cursor: pointer;
   }
+}
+
+.feedback-form__label_tel svg {
+  position: absolute;
+  right: 19px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.feedback-form__label_email svg {
+  position: absolute;
+  right: 21px;
+  bottom: 23px;
+  z-index: 2;
 }
 
 .feedback-form__title {
@@ -362,6 +376,11 @@
 
   .feedback-form__input_comment {
     padding: 18px 21px 29px;
+
+    &:focus {
+      padding-top: 14px;
+      padding-left: 17px;
+    }
   }
 
   .feedback-form__button-container {
@@ -431,8 +450,15 @@
     margin-bottom: 0;
   }
 
-  .feedback-form_label_tel::after {
+  .feedback-form__label_tel::after {
     right: 78px;
+  }
+
+  .feedback-form__label_tel svg {
+    position: absolute;
+    right: 97px;
+    bottom: 20px;
+    z-index: 2;
   }
 
   .feedback-form__contacts input {
@@ -442,7 +468,7 @@
   }
 
   .feedback-form__text-wrapper {
-    padding: 0 18px 0 0;
+    padding: 0 17px 0 0;
   }
 
   .feedback-form__tell {

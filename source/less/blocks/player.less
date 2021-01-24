@@ -74,9 +74,14 @@
 }
 
 .player__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   height: 20px;
   border: none;
   cursor: pointer;
+  background: none;
 
   &:not(:last-child) {
     margin-right: 31px;
@@ -93,6 +98,19 @@
 
 .player__button_fullscreen {
   width: 20px;
+}
+
+.player__icon {
+  fill: @player__icon;
+}
+
+.player__button:hover .player__icon,
+.player__button:focus .player__icon {
+  fill: @radio__input_checked;
+}
+
+.player__button:active .player__icon {
+  fill: fade(@radio__input_checked, 30%);
 }
 
 @media (min-width: @tablet-width) {
@@ -138,5 +156,18 @@
     height: 93px;
     padding: 13px 41px 15px 35px;
     background-color: @player__control;
+  }
+
+  .player__icon {
+    fill: @page-background;
+  }
+
+  .player__button:hover .player__icon,
+  .player__button:focus .player__icon {
+    fill: fade(@page-background, 80%);
+  }
+
+  .player__button:active .player__icon {
+    fill: fade(@page-background, 30%);
   }
 }

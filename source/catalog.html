@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML ACADEMY: Каталог медиаматериалов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header page-header_catalog">
@@ -75,7 +75,11 @@
                 <p class="photo__author">Автор фото: Борис</p>
               </div>
               <div class="photo__approval-container">
-                <button class="photo__approval-button" type="button" aria-label="Нравится"></button>
+                <button class="photo__approval-button" type="button" aria-label="Нравится">
+                  <svg class="photo__approval-icon" width="23" height="21">
+                    <use xlink:href="img/spriteint.svg#like-icon"></use>
+                  </svg>
+                </button>
                 <span class="photo__approval-number">1350</span>
               </div>
             </div>
@@ -111,7 +115,11 @@
                 <p class="photo__author">Автор фото: Сергей</p>
               </div>
               <div class="photo__approval-container">
-                <button class="photo__approval-button" type="button" aria-label="Нравится"></button>
+                <button class="photo__approval-button" type="button" aria-label="Нравится">
+                  <svg class="photo__approval-icon" width="23" height="21">
+                    <use xlink:href="img/spriteint.svg#like-icon"></use>
+                  </svg>
+                </button>
                 <span class="photo__approval-number">143</span>
               </div>
             </div>
@@ -147,7 +155,11 @@
                 <p class="photo__author">Автор фото: Петр</p>
               </div>
               <div class="photo__approval-container">
-                <button class="photo__approval-button" type="button" aria-label="Нравится"></button>
+                <button class="photo__approval-button" type="button" aria-label="Нравится">
+                  <svg class="photo__approval-icon" width="23" height="21">
+                    <use xlink:href="img/spriteint.svg#like-icon"></use>
+                  </svg>
+                </button>
                 <span class="photo__approval-number">96</span>
               </div>
             </div>
@@ -183,7 +195,11 @@
                 <p class="photo__author">Автор фото: Антон</p>
               </div>
               <div class="photo__approval-container">
-                <button class="photo__approval-button" type="button" aria-label="Нравится"></button>
+                <button class="photo__approval-button" type="button" aria-label="Нравится">
+                  <svg class="photo__approval-icon" width="23" height="21">
+                    <use xlink:href="img/spriteint.svg#like-icon"></use>
+                  </svg>
+                </button>
                 <span class="photo__approval-number">254</span>
               </div>
             </div>
@@ -202,6 +218,9 @@
               <button
                 class="player__button player__button_replay"
                 type="button" aria-label="Воспроизвести заново">
+                <svg class="player__icon player__icon_replay" width="16" height="20">
+                  <use xlink:href="img/spriteint.svg#replay"></use>
+                </svg>
               </button>
             <div class="player__loading-bar-container">
               <div class="player__loading-bar">
@@ -213,11 +232,17 @@
                 class="player__button player__button_subtitles"
                 type="button"
                 aria-label="Показать субтитры">
+                <svg class="player__icon player__icon_subtitles" width="32" height="20">
+                  <use xlink:href="img/spriteint.svg#subtitles"></use>
+                </svg>
               </button>
               <button
                 class="player__button player__button_fullscreen"
                 type="button"
                 aria-label="Во весь экран">
+                <svg class="player__icon player__icon_fullscreen" width="32" height="20">
+                  <use xlink:href="img/spriteint.svg#fullscreen"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -226,17 +251,35 @@
     </main>
 
     <footer class="page-footer">
-      <b>#VISITSEDONA</b>
+      <svg  width="136" height="16">
+        <use xlink:href="img/sprite.svg#visitsedona"></use>
+      </svg>
       <div class="page-footer__social-container">
-        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com">
+          <svg width="18" height="15">
+            <use xlink:href="img/spriteint.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com">
+          <svg width="9" height="19">
+            <use xlink:href="img/spriteint.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com">
+          <svg width="20" height="14">
+            <use xlink:href="img/spriteint.svg#icon-youtube"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__address-container">
-        <p class="address-text">Разработано</p>
-        <a class="address-img" href="#" aria-label="https://htmlacademy.ru/intensive/adaptive"></a>
+        <p class="page-footer__address-text">Разработано</p>
+        <a class="page-footer__address-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg width="27" height="35">
+            <use xlink:href="img/spriteint.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

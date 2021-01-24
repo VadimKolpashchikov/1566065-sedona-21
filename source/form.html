@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Форма отзыва</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header page-header_form">
@@ -51,11 +51,11 @@
             </legend>
             <label>
               Имя*:
-              <input class="feedback-form__input input_required" type="text" name="name" placeholder="Пётр" required>
+              <input class="feedback-form__input " type="text" name="name" placeholder="Пётр" required>
             </label>
             <label>
               Фамилия*:
-              <input class="feedback-form__input input_required" type="text" name="surname" placeholder="Иванов" required>
+              <input class="feedback-form__input" type="text" name="surname" placeholder="Иванов" required>
             </label>
             <label>
               Отчество:
@@ -67,24 +67,30 @@
             <legend class="feedback-form__legend">
               <span class="feedback-form__title">Контактная информация:</span>
             </legend>
-            <label class="feedback-form_label feedback-form_label_tel">
+            <label class="feedback-form__label feedback-form__label_tel">
               <span class="feedback-form__text-wrapper feedback-form__tell">Контактный телефон*:</span>
                 <input
-                  class="feedback-form__input feedback-form__input_tel input_required"
+                  class="feedback-form__input feedback-form__input_tel"
                   type="tel" name="telephone"
                   placeholder="Введите телефон"
                   required
                 >
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </label>
-            <label class="feedback-form_label feedback-form_label_email">
+            <label class="feedback-form__label feedback-form__label_email">
               <span class="feedback-form__text-wrapper">Электронная почта*:</span>
               <input
-                class="feedback-form__input feedback-form__input_email input_required"
+                class="feedback-form__input feedback-form__input_email"
                 type="email"
                 name="email"
                 placeholder="Введите e-mail"
                 required
               >
+              <svg width="16" height="12">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </label>
           </fieldset>
           <div class="border"></div>
@@ -95,14 +101,32 @@
             <label class="radio check option">
               <input class="radio__input" type="radio" name="impression" value="positive" checked>
               Скорее положительное
+              <svg class="radio__shape radio__shape_big" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#shape-big"></use>
+              </svg>
+              <svg class="radio__shape radio__shape_small" width="22" height="22">
+                <use xlink:href="img/spriteint.svg#shape-small"></use>
+              </svg>
             </label>
             <label class="radio check option">
               <input class="radio__input" type="radio" name="impression" value="negative">
               Скорее отрицательное
+              <svg class="radio__shape radio__shape_big" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#shape-big"></use>
+              </svg>
+              <svg class="radio__shape radio__shape_small" width="22" height="22">
+                <use xlink:href="img/spriteint.svg#shape-small"></use>
+              </svg>
             </label>
             <label class="radio check option">
               <input class="radio__input" type="radio" name="impression" value="baffling">
               Затрудняюсь ответить
+              <svg class="radio__shape radio__shape_big" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#shape-big"></use>
+              </svg>
+              <svg class="radio__shape radio__shape_small" width="22" height="22">
+                <use xlink:href="img/spriteint.svg#shape-small"></use>
+              </svg>
             </label>
           </fieldset>
           <div class="border"></div>
@@ -111,20 +135,44 @@
               <span class="feedback-form__title">Посещенные достопримечательности:</span>
             </legend>
             <label class="check feedback-form__box option">
-              <input class="check-input" type="checkbox" name="visited" value="Devils bridge" checked>
+              <input class="check__input" type="checkbox" name="visited" value="Devils bridge" checked>
               Мост Дьявола
+              <svg class="check__icon check__icon_layer" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#layer"></use>
+              </svg>
+              <svg class="check__icon check__icon_tick" width="24" height="17">
+                <use xlink:href="img/spriteint.svg#tick"></use>
+              </svg>
             </label>
             <label class="check feedback-form__box option">
-              <input class="check-input" type="checkbox" name="visited" value="Mount Bell" checked>
+              <input class="check__input" type="checkbox" name="visited" value="Mount Bell" checked>
               Гора-Колокол
+              <svg class="check__icon check__icon_layer" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#layer"></use>
+              </svg>
+              <svg class="check__icon check__icon_tick" width="24" height="17">
+                <use xlink:href="img/spriteint.svg#tick"></use>
+              </svg>
             </label>
             <label class="check feedback-form__box option">
-              <input class="check-input" type="checkbox" name="visited" value="Slide park" checked>
+              <input class="check__input" type="checkbox" name="visited" value="Slide park" checked>
               Слайд-парк
+              <svg class="check__icon check__icon_layer" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#layer"></use>
+              </svg>
+              <svg class="check__icon check__icon_tick" width="24" height="17">
+                <use xlink:href="img/spriteint.svg#tick"></use>
+              </svg>
             </label>
             <label class="check feedback-form__box option">
-              <input class="check-input" type="checkbox" name="visited" value="Red rocks">
+              <input class="check__input" type="checkbox" name="visited" value="Red rocks">
               Красные скалы
+              <svg class="check__icon check__icon_layer" width="56" height="56">
+                <use xlink:href="img/spriteint.svg#layer"></use>
+              </svg>
+              <svg class="check__icon check__icon_tick" width="24" height="17">
+                <use xlink:href="img/spriteint.svg#tick"></use>
+              </svg>
             </label>
           </fieldset>
           <div class="border"></div>
@@ -147,15 +195,33 @@
     </main>
 
     <footer class="page-footer">
-      <b>#VISITSEDONA</b>
+      <svg width="136" height="16">
+        <use xlink:href="img/sprite.svg#visitsedona"></use>
+      </svg>
       <div class="page-footer__social-container">
-        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com">
+          <svg width="18" height="15">
+            <use xlink:href="img/spriteint.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com">
+          <svg width="9" height="19">
+            <use xlink:href="img/spriteint.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com">
+          <svg width="20" height="14">
+            <use xlink:href="img/spriteint.svg#icon-youtube"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__address-container">
-        <p class="address-text">Разработано</p>
-        <a class="address-img" href="#" aria-label="https://htmlacademy.ru/intensive/adaptive"></a>
+        <p class="page-footer__address-text">Разработано</p>
+        <a class="page-footer__address-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg width="27" height="35">
+            <use xlink:href="img/spriteint.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
 
@@ -179,6 +245,6 @@
         <button class="button review-sent__button-close" type="button">Закрыть окно</button>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

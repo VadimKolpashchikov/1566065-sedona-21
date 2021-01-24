@@ -65,27 +65,30 @@
   &:not(:last-child) {
     margin-bottom: 26px;
   }
+}
 
-  &_housing::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -6px;
-    left: -48px;
+.advantage__icon {
+  position: absolute;
+  top: -9px;
+  left: -48px;
+
+  &_house {
     width: 39px;
     height: 37px;
-    background-image: url("../img/sprite.svg#icon-house-view");
   }
 
-  &_souvenirs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -6px;
-    left: -48px;
+  &_gift {
+    top: -11px;
+    left: -45px;
     width: 32px;
     height: 38px;
-    background-image: url("../img/sprite.svg#icon-gift-view");
+  }
+
+  &_burger {
+    top: -5px;
+    left: -51px;
+    width: 40px;
+    height: 35px;
   }
 }
 
@@ -146,6 +149,10 @@
 
   .advantage__text {
     padding-top: 23px;
+
+    &_keynote {
+      padding: 0 3px;
+    }
   }
 
   .advantage__number {
@@ -173,6 +180,32 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+  }
+
+  .advantage__icon {
+    top: -98px;
+    left: 35%;
+    right: 65%;
+
+    &_house {
+      width: 75px;
+      height: 72px;
+    }
+
+    &_gift {
+      top: -101px;
+      left: 37%;
+      width: 64px;
+      height: 75px;
+    }
+
+    &_burger {
+      top: -95px;
+      left: 35%;
+      right: 66%;
+      width: 76px;
+      height: 68px;
     }
   }
 
@@ -207,6 +240,10 @@
     &::after {
       content: none;
     }
+  }
+
+  .advantage__text_short-keynote {
+    padding: 0 9px;
   }
 
   .advantage_short .advantage__number {
@@ -251,5 +288,20 @@
 
   .advantage__img-devils-bridge {
     background-position: 50% -15px;
+  }
+
+  .advantage__icon {
+    top: -98px;
+    left: 40%;
+    right: 60%;
+
+    &_gift {
+      top: -101px;
+      left: 42%;
+    }
+
+    &_burger {
+      top: -95px;
+    }
   }
 }

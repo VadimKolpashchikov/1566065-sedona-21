@@ -9,3 +9,39 @@
 .radio {
   position: relative;
 }
+
+.radio__shape {
+  position: absolute;
+
+  &_big {
+    top: -15px;
+    left: 3px;
+    width: 56px;
+    height: 56px;
+    fill: @feedback-form__input;
+  }
+
+  &_small {
+    top: 2px;
+    left: 20px;
+    fill: @radio__input_checked;
+    visibility: hidden;
+  }
+}
+
+.radio__input:checked ~ .radio__shape_small {
+  visibility: visible;
+}
+
+.radio__input:hover ~ .radio__shape_big,
+.radio__input:focus ~ .radio__shape_big {
+  fill: @border;
+}
+
+.radio__input:active ~ .radio__shape_small {
+  opacity: 30%;
+}
+
+.radio__input:active ~ .radio__shape_big {
+  fill: @radio__input_active;
+}

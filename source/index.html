@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header page-header_index">
@@ -53,10 +53,16 @@
             <div>
               <ul class="advantage__list">
                 <li class="advantage__item advantage__item_housing">
+                  <svg class="advantage__icon advantage__icon_house">
+                    <use xlink:href="img/sprite.svg#icon-house"></use>
+                  </svg>
                   <p class="advantage__text_keynote text_keynote">Жильё</p>
                   <p class="advantage__text text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="advantage__item advantage__item_souvenirs">
+                  <svg class="advantage__icon advantage__icon_gift">
+                    <use xlink:href="img/sprite.svg#icon-gift"></use>
+                  </svg>
                   <p class="advantage__text_keynote text_keynote">Сувениры</p>
                   <p class="advantage__text text">
                     Не только китайского,
@@ -64,7 +70,7 @@
                   </p>
                 </li>
                 <li class="advantage__item advantage__item_food">
-                  <svg class="advantage__icon-burger" width="40" height="35">
+                  <svg class="advantage__icon advantage__icon_burger">
                     <use xlink:href="img/sprite.svg#icon-burger"></use>
                   </svg>
                   <p class="advantage__text_keynote text_keynote">Еда</p>
@@ -82,17 +88,17 @@
             <div class="advantage__img-container advantage__img-devils-bridge" aria-label="мост дьявола"></div>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_short text_keynote">Небольшая площадь</p>
+            <p class="advantage__text_short advantage__text_short-keynote text_keynote">Небольшая площадь</p>
             <span class="advantage__number">— №3 —</span>
             <p>Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_short text_keynote">Красивая дорога</p>
+            <p class="advantage__text_short advantage__text_short-keynote text_keynote">Красивая дорога</p>
             <span class="advantage__number">— №4 —</span>
             <p>Ехать в Седону из Лас-&nbspВегаса совсем не&nbspскучно!</p>
           </li>
           <li class="advantages__item advantage advantage_short">
-            <p class="advantage__text_short text_keynote">Мало туристов</p>
+            <p class="advantage__text_short advantage__text_short-keynote text_keynote">Мало туристов</p>
             <span class="advantage__number">— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -107,28 +113,48 @@
             и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в седоне
           </p>
         </div>
-        <a class="check-in__button button" href="#">Найти гостиницу</a>
+        <a class="check-in__button button button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <a class="map__link" href="https://goo.gl/maps/uQ7ARYF98ZbJYkZb7" aria-label="Карта"></a>
+        <a class="map__link" href="https://goo.gl/maps/uQ7ARYF98ZbJYkZb7" aria-label="Карта">
+          <svg class="map__marker" width="27" height="27">
+            <use xlink:href="img/sprite.svg#map-marker"></use>
+          </svg>
+        </a>
       </section>
     </main>
 
     <footer class="page-footer">
-      <svg class="page-footer__visitsedona" width="136" height="16">
+      <svg  width="136" height="16">
         <use xlink:href="img/sprite.svg#visitsedona"></use>
       </svg>
       <div class="page-footer__social-container">
-        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com"></a>
-        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com"></a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="twitter.com">
+          <svg  width="18" height="15">
+            <use xlink:href="img/spriteint.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="facebook.com">
+          <svg  width="9" height="19">
+            <use xlink:href="img/spriteint.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="page-footer__social-img social-img" href="#" aria-label="youtube.com">
+          <svg  width="20" height="14">
+            <use xlink:href="img/spriteint.svg#icon-youtube"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__address-container">
-        <p class="address-text">Разработано</p>
-        <a class="address-img" href="#" aria-label="https://htmlacademy.ru/intensive/adaptive"></a>
+        <p class="page-footer__address-text">Разработано</p>
+        <a class="page-footer__address-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg  width="27" height="35">
+            <use xlink:href="img/spriteint.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

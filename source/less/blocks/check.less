@@ -1,0 +1,67 @@
+.check {
+  position: relative;
+}
+
+.check__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__icon {
+  position: absolute;
+
+  &_layer {
+    top: -16px;
+    left: 0;
+    fill: @feedback-form__input;
+  }
+
+  &_tick {
+    display: none;
+    top: 3px;
+    left: 16px;
+    fill: @radio__input_checked;
+  }
+}
+
+.check__input:checked ~ .check__icon_tick {
+  display: block;
+}
+
+.check__input:hover ~ .check__icon_layer,
+.check__input:focus ~ .check__icon_layer {
+  fill: @border;
+}
+
+.check__input:active ~ .check__icon_layer {
+  fill: @radio__input_active;
+}
+
+.check__input:active ~ .check__icon_tick {
+  opacity: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .check__icon_layer {
+    left: 30px;
+  }
+
+  .check__icon_tick {
+    top: 5px;
+    left: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .check__icon_layer {
+    left: 0;
+  }
+
+  .check__icon_tick {
+    top: 5px;
+    left: 16px;
+  }
+}

@@ -58,11 +58,29 @@
 }
 
 .photo__approval-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 23px;
   height: 21px;
   margin-right: 14px;
   margin-bottom: 4px;
+  padding: 0;
   border: none;
+  background: none;
+}
+
+.photo__approval-icon {
+  fill: fade(@text, 30%);
+}
+
+.photo__approval-button:hover .photo__approval-icon,
+.photo__approval-button:focus .photo__approval-icon {
+  fill: @button-hover;
+}
+
+.photo__approval-button:active .photo__approval-icon {
+  fill: @button-active;
 }
 
 @media (min-width: @tablet-width) {
@@ -150,5 +168,9 @@
 
   .photo_full {
     min-height: 400px;
+  }
+
+  .photo__approval-icon {
+    fill: @page-background;
   }
 }
