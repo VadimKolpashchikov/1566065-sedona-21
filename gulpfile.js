@@ -91,7 +91,7 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Sprite
+// Spriteint
 
 const spriteint = () => {
   return gulp.src("source/img/svgint/*.svg")
