@@ -7,7 +7,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page-body">
+  <body class="page__body">
     <header class="page-header page-header_form">
       <div class="main-nav-container">
         <nav class="main-nav">
@@ -36,8 +36,8 @@
     </header>
 
     <main class="page-main form-main">
-      <h1 class="visually-hidden">Форма отзыва</h1>
       <section class="feedback">
+        <h1 class="visually-hidden">Форма отзыва</h1>
         <div class="text-container feedback__text-container">
           <p class="text_keynote feedback__text_keynote">Оставьте свой отзыв</p>
           <p class="text">
@@ -45,7 +45,6 @@
           </p>
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__user-name">
             <legend class="feedback-form__legend">
               <span class="feedback-form__title">Представьтесь:</span>
@@ -63,10 +62,9 @@
               <input class="feedback-form__input" type="text" name="middle-name" placeholder="Александрович">
             </label>
           </fieldset>
-          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__contacts">
             <legend class="feedback-form__legend">
-              <span class="feedback-form__title">Контактная информация:</span>
+              <span class="feedback-form__title feedback-form__title_center">Контактная информация:</span>
             </legend>
             <label class="feedback-form__label feedback-form__label_tel">
               <span class="feedback-form__text-wrapper feedback-form__tell">Контактный телефон*:</span>
@@ -94,10 +92,9 @@
               </svg>
             </label>
           </fieldset>
-          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__impression">
             <legend class="feedback-form__legend">
-              <span class="feedback-form__title">Ваше общее впечатление:</span>
+              <span class="feedback-form__title feedback-form__title_left">Ваше общее впечатление:</span>
             </legend>
             <label class="radio check option">
               <input class="radio__input" type="radio" name="impression" value="positive" checked>
@@ -130,10 +127,9 @@
               </svg>
             </label>
           </fieldset>
-          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__visited">
             <legend class="feedback-form__legend">
-              <span class="feedback-form__title">Посещенные достопримечательности:</span>
+              <span class="feedback-form__title feedback-form__title_center">Посещенные достопримечательности:</span>
             </legend>
             <label class="check feedback-form__box option">
               <input class="check__input" type="checkbox" name="visited" value="Devils bridge" checked>
@@ -176,10 +172,9 @@
               </svg>
             </label>
           </fieldset>
-          <div class="border"></div>
           <fieldset class="feedback-form__item feedback-form__comment">
             <legend class="feedback-form__legend">
-              <span class="feedback-form__title">Опишите свои эмоции:</span>
+              <span class="feedback-form__title feedback-form__title_center">Опишите свои эмоции:</span>
             </legend>
             <textarea
               class="feedback-form__input feedback-form__input_comment"
